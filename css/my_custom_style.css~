@@ -1,0 +1,249 @@
+.my_body {
+	background: #F2F2F2;	
+}
+.tab_name{
+	overflow: hidden;overflow-x: auto;padding-top:10px; height: 40px;min-width:120px;max-width:220px
+}
+.tab_name:hover{
+	cursor:pointer;
+	text-decoration:underline
+}
+.response_body{
+	padding-left:15px;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-right:15px
+}
+.heading{
+	width:100%;
+	height:45px;
+	font-size:15pt;
+	font-weight:bold;
+	padding:10px;
+	border-radius:1px;
+}
+label {color:#848484; font-weight:normal}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 10px 5px 10px 5px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	border-radius:4px
+}
+.div_bg
+{
+    padding: 10px 5px 10px 5px;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 100px;
+    height: 120px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	background-color: #ffffff;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.option
+{
+	cursor: pointer
+}
+/*
+ * Base structure cdacaca
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall
+ * 
+ * background-color:#FAFAFA; */
+body {
+	background-color:#F7F7F7;
+   font-family: Arial, Helvetica, sans-serif, calibri;
+   font-size: 15px;padding-top:45px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+.div_vertical_center_align{
+	border: 1px solid #c3c3c3;
+	height: 280px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.box {
+    float: left;
+    margin: 5px;
+    width: 100%;
+    border-radius:5px;
+    border: 0px solid #FFFFFF;
+    background-color:#F7F7F7
+}
+.inner_box{
+	height:450px; overflow:hidden; width:100%;
+	overflow-x:auto;overflow-y:auto;
+}
+.outer_box {
+    float: left;
+    margin: 5px;
+    width: 80%;
+    max-height: 550px;min-height:550px;overflow: hidden;overflow-y: auto;
+	-webkit-align-content: center; align-content: center;
+}
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}
+.circular {
+					width: 100px;
+					height: 100px;
+					border-radius: 150px;
+					-webkit-border-radius: 150px;
+					-moz-border-radius: 150px;
+					box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+					-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+					-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		}
+.small_circular_image {
+	width: 30px;
+	height: 30px;
+	border-radius: 150px;
+}
+.header_bg{
+	height:60px;
+	padding-top:15px;
+	background-color:#FAFAFA;
+	color:#FFFFFF;
+	border: 0px solid #1BBAA9
+}
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #28992D; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 21px; margin: 4.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
