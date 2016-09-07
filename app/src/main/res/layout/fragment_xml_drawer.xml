@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/username" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_weight="0.39"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="Mr. User"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#373636" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:background="@color/text_count_color"
+            android:layout_weight="0.01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_weight="0.39"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="user@android.com"
+                android:textColor="#252525" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/text_count_color"
+            android:layout_weight="0.01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_weight="0.39"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/user_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="user_role"
+                android:textColor="#252525" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/text_count_color"
+            android:layout_weight="0.01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="#ffffff">
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:background="#ffffff">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/drawerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
