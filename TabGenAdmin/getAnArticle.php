@@ -1,4 +1,5 @@
 <?php
+/*mobile app api: getting a particular article*/
 include('tabgen_php_functions.php');
 include('connect_db.php');
 
@@ -31,10 +32,9 @@ else{
 			"response"=>$output,
 			"web_view"=>"http://".SERVER_IP."/TabGenAdmin/getAnArticleWebView.php?article_id=".$id));
 		}
-		else {
+		else{
 			echo json_encode(array("status"=>false,"message"=>"Sorry, unable to get result."));
-		}
-		
+		}	
 	}
 	else{
 		echo json_encode(array("status"=>false,"message"=>"Sorry, unable to connect database."));

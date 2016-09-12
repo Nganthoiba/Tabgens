@@ -45,6 +45,7 @@
 				
 				$outer_arr=null;
 				$inner_arr=null;
+				/*program for grouping items in 3,2,1 format*/
 				if($count>3){
 					$i=0;
 					while($i<=2){
