@@ -96,7 +96,12 @@ public class MainActivity extends Activity {
                         sp.saveServerIP_Preference(context, server_ip);
                         JSONObject jsonObject = new JSONObject();
                         //jsonObject.put("name", team_name);
-                        jsonObject.put("username", uname);//username.getText().toString()
+                        if(isValidEmail(uname)){
+                            jsonObject.put("email", uname);
+                        }
+                        else{
+                            jsonObject.put("username", uname);//username.getText().toString()
+                        }
                         jsonObject.put("password", passwd);//password.getText().toString()
                         UserLogin ul = new UserLogin();
                         ul.execute(jsonObject);
@@ -167,7 +172,7 @@ public class MainActivity extends Activity {
         CustomDialogManager cdm;
         Boolean testInternet = ic.isMobileInternetConnected() || ic.isWifiInternetConnected();
         if (username.getText().toString().trim().length() == 0) {
-            msg = "Please enter your username";
+            msg = "Please enter your username or email";
             cdm = new CustomDialogManager(MainActivity.this, "Username empty", msg, false);
             cdm.showCustomDialog();
             return false;
